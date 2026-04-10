@@ -1,5 +1,5 @@
 1A)
-.open badstore run ifconfig copy ifconfid ip
+.open badstore run ifconfig copy ifconfig ip
 .login as admin' -- ,add cart value in whats new update cart
 . in search right click select inspection clear maxlength
 . seach  <script>alert(document.cookie)</script>
@@ -128,7 +128,7 @@ open terminal
 >> nc -l -p 5000
 go to browser firefox and search -> localhost:5000come back to terminal
 HTTP/1.1 200 OK
-Content-Type- text/html; charset=UTF-8
+Content-Type: text/html; charset=UTF-8
 server: nooblinux
 
 <!doctype html>
