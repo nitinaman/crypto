@@ -178,6 +178,7 @@ show the answer of upload price list
 9C) same as  2A)
 
 10A)
+.run ping command in terminal 
 >>> from scapy.all import *
 def packet_calback(packet):
 ...:     if packet[IP].proto==1:
