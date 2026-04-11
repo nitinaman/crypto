@@ -205,3 +205,5 @@ def packet_calback(packet):
 
 12C)  do same done in 1A)  answer cart_id
 
+
+https://github.com/1R5HAD/crypto
