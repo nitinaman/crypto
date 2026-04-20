@@ -134,7 +134,7 @@ server: nooblinux
 <!doctype html>
 <title>bnm</title>
 <h1>cars</h1>
-<img src="copy link">
+<img src="image.jpg" alt="sample" width="300" height="200">
 
 7C)
 .login as admin
