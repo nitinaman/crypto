@@ -146,7 +146,7 @@ again write  >> x'union select count(itemnum),count(itemnum),count(itemnum),coun
 8A)
 >>> from scapy.all import *
 >>> target_ip = "www.example.com"
->>>ports= [22,88,443]
+>>>ports= [22,80,443]
 >>> for port in ports:
 ...:     packet = IP(dst=target_ip) / TCP(dport=port,flags="S")
 ...:     response = sr1(packet,timeout=1,verbose=0)
